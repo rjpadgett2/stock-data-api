@@ -191,7 +191,7 @@ INSERT INTO breed_characteristics (breed_id, characteristic_type, value_numeric,
 -- Rhode Island Red characteristics
 INSERT INTO breed_characteristics (breed_id, characteristic_type, value_numeric, value_text, unit, sex, age_category, source_id) VALUES
 ((SELECT id FROM breeds WHERE name = 'Rhode Island Red'), 'weight', 8.5, NULL, 'lbs', 'male', 'adult', (SELECT id FROM sources WHERE title = 'FAO DAD-IS Database')),
-((SELECT id FROM species WHERE name = 'Rhode Island Red'), 'weight', 6.5, NULL, 'lbs', 'female', 'adult', (SELECT id FROM sources WHERE title = 'FAO DAD-IS Database')),
+((SELECT id FROM breeds WHERE name = 'Rhode Island Red'), 'weight', 6.5, NULL, 'lbs', 'female', 'adult', (SELECT id FROM sources WHERE title = 'FAO DAD-IS Database')),
 ((SELECT id FROM breeds WHERE name = 'Rhode Island Red'), 'egg_production', 260, NULL, 'eggs/year', 'female', 'adult', (SELECT id FROM sources WHERE title = 'FAO DAD-IS Database')),
 ((SELECT id FROM breeds WHERE name = 'Rhode Island Red'), 'color', NULL, 'Deep mahogany red', NULL, 'both', 'adult', (SELECT id FROM sources WHERE title = 'Oklahoma State University Breeds'));
 
